@@ -1,0 +1,99 @@
+.introduction-container h1 {
+  font-size: 2.5rem;
+  color: #484848;
+  font-weight: 700;
+}
+
+.introduction-container h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #4285F4;
+}
+
+.introduction-container p {
+  margin-bottom: 1rem;
+  font-size: 1.15rem;
+}
+
+.social-media-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 3rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.social-media-container a {
+  margin-right: 2.5rem;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .social-media-container a {
+    margin-right: 1.5rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .social-media-container a {
+    margin-right: 1.75rem;
+  }
+}
+
+.social-media-container a:last-child {
+  margin-right: 0;
+}
+
+.social-media-container a:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.social-media-container .kaggle {
+  color: #20BEFF;
+}
+
+.social-media-container .github {
+  color: #000;
+}
+
+.social-media-container .twitter {
+  color: #55ACEE;
+}
+
+.social-media-container .socicon {
+  font-size: 2.25rem;
+}
+
+.project-container h3 {
+  font-size: 1.25rem;
+  color: #4285F4;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.project-container h1 {
+  font-size: 2.25rem;
+  color: #484848;
+  font-weight: 600;
+}
+
+.project-container p {
+  font-size: 1rem;
+  color: #484848;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+/*# sourceMappingURL=home.css.map */

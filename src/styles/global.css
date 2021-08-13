@@ -1,0 +1,86 @@
+.button-primary {
+  padding: 18px 0;
+  min-width: 220px;
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.button-primary:hover {
+  cursor: pointer;
+  background-color: #326156;
+}
+
+.button-secondary {
+  padding: 18px 0;
+  min-width: 220px;
+  background-color: transparent;
+  color: #4285F4;
+  border: 2px solid #4285F4;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.button-secondary:hover {
+  cursor: pointer;
+  background-color: #326156;
+  color: white;
+}
+
+.button-disabled {
+  padding: 18px 0;
+  min-width: 220px;
+  background-color: #717372;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.button-disabled:hover {
+  cursor: not-allowed;
+  background-color: #464646;
+}
+
+.content-container {
+  padding: 5% 25%;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .content-container {
+    padding: 20% 10%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .content-container {
+    padding: 15% 10%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content-container {
+    padding: 10% 15%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .content-container {
+    padding: 5% 20%;
+  }
+}
+/*# sourceMappingURL=global.css.map */

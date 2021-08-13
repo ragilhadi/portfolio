@@ -1,0 +1,88 @@
+@import '../base.scss';
+
+.introduction-container {
+    h1 {
+        font-size: 2.5rem;
+        color: $textBlack;
+        font-weight:$bold;
+    }
+    h2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-weight:$medium;
+        color: $primaryColor;
+    }
+
+    p {
+        margin-bottom: 1rem;
+        font-size: 1.15rem;
+    }
+}
+
+.social-media-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem;
+    justify-content: flex-start;
+
+    a {
+        margin-right: 2.5rem;
+        cursor: pointer;
+        transition: transform .5s ease-in-out;
+
+        @include respon(phone-pot) {
+            margin-right: 1.5rem;
+        }
+        @include respon(phone-land) {
+            margin-right: 1.75rem;
+            
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+
+    .kaggle {
+        color: #20BEFF;
+    }
+
+    .github {
+        color: #000;
+    }
+
+    .twitter {
+        color: #55ACEE;
+    }
+
+    .socicon {
+        font-size: 2.25rem;
+    }
+}
+
+.project-container {
+    h3 {
+        font-size: 1.25rem;
+        color: $primaryColor;
+        font-weight:$regular;
+        margin-bottom: 0.5rem;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+        color: $textBlack;
+        font-weight:$semi-bold;
+    }
+
+    p {
+        font-size: 1rem;
+        color: $textBlack;
+        font-weight:$regular;
+        margin-top: 0.5rem;
+    }
+}

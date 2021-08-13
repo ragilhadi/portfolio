@@ -1,0 +1,73 @@
+@import 'base.scss';
+
+.button-primary {
+    padding: 18px 0;
+    min-width: 220px;
+    background-color: $primaryColor;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.15rem;
+    font-weight:$semi-bold;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    &:hover {
+        cursor: pointer;
+        background-color: #326156;
+    }
+}
+
+.button-secondary {
+    padding: 18px 0;
+    min-width: 220px;
+    background-color: transparent;
+    color: $primaryColor;
+    border: 2px solid $primaryColor;
+    border-radius: 10px;
+    font-size: 1.15rem;
+    font-weight:$semi-bold;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    &:hover {
+        cursor: pointer;
+        background-color: #326156;
+        color: white;
+    }
+}
+
+
+.button-disabled {
+    padding: 18px 0;
+    min-width: 220px;
+    background-color: $grayColor;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.15rem;
+    font-weight:$semi-bold;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    &:hover {
+        cursor: not-allowed;
+        background-color: #464646;
+    }
+}
+
+.content-container {
+    padding: 5% 25%;
+
+    @include respon(phone-pot) {
+        padding: 20% 10%;
+    }
+    @include respon(phone-land) {
+        padding: 15% 10%;
+        
+    }
+    @include respon(tb-pot) {
+        padding: 10% 15%;
+    }
+    @include respon(tb-land) {
+        padding: 5% 20%;
+    }
+
+}
