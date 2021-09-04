@@ -92,17 +92,43 @@
     flex-direction: row;
     justify-content: space-between;
     position: relative;
+    flex-wrap: wrap;
     margin-top: 1.5rem;
+
+    @include respon(phone-pot) {
+        flex-direction: column;
+    }
+    @include respon(phone-land) {
+        flex-direction: column;
+    }
+    @include respon(tb-pot) {
+        flex-direction: column;
+    }
 
     .showcase-card {
         width: 39%;
-        height: 250px;
+        height: 270px;
         display: flex;
+        position: relative;
         flex-direction: column;
+        margin-bottom: 2rem;
         padding: 5%;
         background-color: white;
         box-shadow: 0px 10px 20px rgba(138, 149, 158, 0.20);
         border-radius: 5px;
+
+        @include respon(phone-pot) {
+            width: 90%;
+            height: 350px;
+        }
+        @include respon(phone-land) {
+            width: 90%;
+            height: 350px;
+        }
+        @include respon(tb-pot) {
+            width: 90%;
+            height: 300px;
+        }
 
         h4 {
             font-size: 1.25rem;
