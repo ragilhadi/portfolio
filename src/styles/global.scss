@@ -1,56 +1,41 @@
 @import 'base.scss';
 
-.button-primary {
-    padding: 18px 0;
-    min-width: 220px;
+.button {
+    border-radius: 10px;
+    display: inline-flex;
+    width: 220px;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 1.15rem;
+    transition: all .2s ease-in-out;
+}
+
+.button-small {
+    border-radius: 10px;
+    display: inline-flex;
+    width: 150px;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 1.15rem;
+    transition: all .2s ease-in-out;
+}
+
+.button-blue {
     background-color: $primaryColor;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.15rem;
-    font-weight:$semi-bold;
-    transition: all 0.2s ease-in-out;
-    outline: none;
     &:hover {
-        cursor: pointer;
-        background-color: #326156;
-    }
+        background-color: #1E50A5;
+    }   
 }
 
-.button-secondary {
-    padding: 18px 0;
-    min-width: 220px;
-    background-color: transparent;
-    color: $primaryColor;
-    border: 2px solid $primaryColor;
-    border-radius: 10px;
-    font-size: 1.15rem;
-    font-weight:$semi-bold;
-    transition: all 0.2s ease-in-out;
-    outline: none;
+.button-red {
+    background-color: #F85E56;
     &:hover {
-        cursor: pointer;
-        background-color: #326156;
-        color: white;
-    }
-}
-
-
-.button-disabled {
-    padding: 18px 0;
-    min-width: 220px;
-    background-color: $grayColor;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.15rem;
-    font-weight:$semi-bold;
-    transition: all 0.2s ease-in-out;
-    outline: none;
-    &:hover {
-        cursor: not-allowed;
-        background-color: #464646;
-    }
+        background-color: #D8342B;
+    }   
 }
 
 .content-container {
@@ -71,3 +56,307 @@
     }
 
 }
+
+.content-wide-container {
+    padding: 10% 10%;
+
+    @include respon(phone-pot) {
+        padding: 20% 10%;
+    }
+    @include respon(phone-land) {
+        padding: 15% 10%;
+        
+    }
+    @include respon(tb-pot) {
+        padding: 10% 15%;
+    }
+    @include respon(tb-land) {
+        padding: 5% 20%;
+    }
+
+
+}
+
+.red-text {
+    color: #F85E56;
+}
+
+.blue-text {
+    color: $primaryColor;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: wrap;
+
+    @include respon(phone-pot) {
+        flex-flow: column wrap-reverse;
+        flex-wrap: wrap-reverse;
+    }
+    @include respon(phone-land) {
+        flex-flow: column wrap-reverse;
+        flex-wrap: wrap-reverse;
+    }
+    @include respon(tb-pot) {
+        flex-flow: column wrap-reverse;
+        flex-wrap: wrap-reverse;
+    }
+
+    img {
+        @include respon(phone-pot) {
+            margin-top: 2rem;
+            object-fit: contain;
+            width: 150px;
+        }
+        @include respon(phone-land) {
+            margin-top: 2rem;
+            object-fit: contain;
+            width: 150px;
+        }
+        @include respon(tb-pot) {
+            margin-top: 2rem;
+            object-fit: contain;
+            width: 150px;
+        }
+    }
+
+    .content-description {
+        h1 {
+            font-size: 3.25rem;
+            color: $textBlack;
+            font-weight:$bold;
+            margin: 1rem 0;
+
+            @include respon(phone-pot) {
+                font-size: 2.25rem;
+            }
+            @include respon(phone-land) {
+                font-size: 2.25rem;
+            }
+            @include respon(tb-pot) {
+                font-size: 2.25rem;
+            }
+        }
+
+
+        p {
+            font-size: 1.25rem;
+            font-weight:$medium;
+        }
+
+        .summary {
+            font-size: 1.15rem;
+            color: $textBlack;
+            font-weight:$regular;
+            width: 50%;
+            margin: 2.5rem 0 1.25rem;
+
+            @include respon(phone-pot) {
+                width: 100%;
+            }
+            @include respon(phone-land) {
+                width: 100%;
+            }
+            @include respon(tb-pot) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.content-flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10% 0;
+
+    @include respon(phone-pot) {
+        flex-direction: column;
+        justify-content: center;
+    }
+    @include respon(phone-land) {
+        flex-direction: column;
+    }
+    @include respon(tb-pot) {
+        flex-direction: column;
+    }
+
+    img {
+        @include respon(phone-pot) {
+            object-fit: contain;
+            margin: 2rem 0;
+            width: 250px;
+        }
+        @include respon(phone-land) {
+            object-fit: contain;
+            width: 250px;
+        }
+        @include respon(tb-pot) {
+            object-fit: contain;
+            width: 250px;
+        }
+    }
+
+    .text {
+        width: 50%;
+        display: inline;
+        @include respon(phone-pot) {
+            width: 100%;
+        }
+        @include respon(phone-land) {
+            width: 100%;
+        }
+        @include respon(tb-pot) {
+            width: 100%;
+        }
+        h2 {
+            font-size: 2rem;
+            color: $textBlack;
+            font-weight:$bold;
+            margin-bottom: 1.5rem;
+            width: 75%;
+            @include respon(phone-pot) {
+                font-size: 1.25rem;
+                width: 100%;
+            }
+            @include respon(phone-land) {
+                font-size: 1.25rem;
+                width: 100%;
+            }
+            @include respon(tb-pot) {
+                font-size: 1.25rem;
+                width: 100%;
+            }
+        }
+        p {
+            font-size: 1.15rem;
+            color: $textBlack;
+            width: 75%;
+            @include respon(phone-pot) {
+                font-size: 1rem;
+                width: 100%;
+            }
+            @include respon(phone-land) {
+                font-size: 1rem;
+                width: 100%;
+            }
+            @include respon(tb-pot) {
+                font-size: 1rem;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    h2 {
+        font-size: 1.75rem;
+        color: $textBlack;
+        font-weight:$bold;
+        margin-bottom: 2rem;
+        @include respon(phone-pot) {
+            font-size: 1.25rem;
+        }
+        @include respon(phone-land) {
+            font-size: 1.25rem;
+        }
+        @include respon(tb-pot) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .image-container {
+        display: flex;
+        align-items: center;
+
+        .icon {
+            margin-right: 3rem;
+            object-fit: contain;
+            width: 100px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.footer-blue {
+    background-color: $primaryColor;
+}
+
+.footer-red {
+    background-color: #F85E56;
+}
+
+.footer-container {
+    padding: 5% 10%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+    @include respon(phone-pot) {
+        flex-direction: column;
+    }
+    @include respon(phone-land) {
+        flex-direction: column;
+    }
+    @include respon(tb-pot) {
+        flex-direction: row;
+    }
+
+    .footer-left {
+        h3 {
+            font-size: 1.5rem;
+            font-weight:$bold;
+            margin-bottom: 1rem; 
+        }
+    }
+
+    .footer-right {
+        display: flex;
+
+        @include respon(phone-pot) {
+            flex-direction: column;
+            margin-top: 2.5rem;
+        }
+        @include respon(phone-land) {
+            flex-direction: column;
+            margin-top: 2.5rem;
+        }
+        @include respon(tb-pot) {
+           justify-content: center;
+           align-items: center;
+        }
+
+        img {
+            @include respon(phone-pot) {
+                object-fit: contain;
+                margin: 2rem 0;
+                width: 70px;
+            }
+            @include respon(phone-land) {
+                object-fit: contain;
+                margin: 2rem 0;
+                width: 70px;
+            }
+            @include respon(tb-pot) {
+                object-fit: contain;
+                width: 70px;
+                margin-left: 2rem;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+

@@ -87,6 +87,22 @@
     }
 }
 
+.border-blue {
+    border-color: $primaryColor;
+}
+
+.border-red {
+    border-color: #F85E56;
+}
+
+.title-red {
+    color: #F85E56;
+}
+
+
+.title-blue {
+    color: $primaryColor;
+}
 .showcase-container {
     display: flex;
     flex-direction: row;
@@ -105,17 +121,17 @@
         flex-direction: column;
     }
 
+
     .showcase-card {
-        width: 39%;
-        height: 270px;
+        width: 40%;
         display: flex;
-        position: relative;
         flex-direction: column;
         margin-bottom: 2rem;
-        padding: 5%;
+        padding: 5% 2.5% 2.5%;
         background-color: white;
-        box-shadow: 0px 10px 20px rgba(138, 149, 158, 0.20);
-        border-radius: 5px;
+        border-width: 4px;
+        border-style: solid;
+        border-radius: 10px;
 
         @include respon(phone-pot) {
             width: 90%;
@@ -130,30 +146,76 @@
             height: 300px;
         }
 
-        h4 {
+        .title {
             font-size: 1.25rem;
-            color: $primaryColor;
             font-weight:$medium;
             margin-bottom: 0.5rem;
+        }
+
+        .button-container {
+            @include respon(phone-pot) {
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+            @include respon(phone-land) {
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+            @include respon(tb-pot) {
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+            
+
+        }
+        .card-flexbox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+
+            @include respon(phone-pot) {
+                flex-direction: column;
+                justify-content:center;
+                text-align: center;
+            }
+            @include respon(phone-land) {
+                flex-direction: column;
+                justify-content:center;
+                text-align: center;
+            }
+            @include respon(tb-pot) {
+                flex-direction: column;
+                justify-content:center;
+                text-align: center;
+            }
+
+            .image-project {
+                object-fit: contain;
+                width: 150px;
+
+                @include respon(phone-pot) {
+                    margin-top: 2rem;
+                    width: 120px;
+                }
+                @include respon(phone-land) {
+                    margin-top: 2rem;
+                    width: 120px;
+                }
+                @include respon(tb-pot) {
+                    margin-top: 2rem;
+                    width: 120px;
+                }
+            }
         }
 
     }
 }
 
 
-.button {
-    border-radius: 50px;
-    width: 140px;
-    position: absolute;
-    bottom: 1.5rem;
-    background-color: $primaryColor;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    padding: 1rem 1.15rem;
-    transition: all .2s ease-in-out;
-
-    &:hover {
-        background-color: #1E50A5;
-    }   
-}

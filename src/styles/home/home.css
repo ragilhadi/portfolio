@@ -97,6 +97,22 @@
   margin-top: 0.5rem;
 }
 
+.border-blue {
+  border-color: #4285F4;
+}
+
+.border-red {
+  border-color: #F85E56;
+}
+
+.title-red {
+  color: #F85E56;
+}
+
+.title-blue {
+  color: #4285F4;
+}
+
 .showcase-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,22 +158,20 @@
 }
 
 .showcase-container .showcase-card {
-  width: 39%;
-  height: 270px;
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 2rem;
-  padding: 5%;
+  padding: 5% 2.5% 2.5%;
   background-color: white;
-  -webkit-box-shadow: 0px 10px 20px rgba(138, 149, 158, 0.2);
-          box-shadow: 0px 10px 20px rgba(138, 149, 158, 0.2);
-  border-radius: 5px;
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 10px;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
@@ -181,28 +195,133 @@
   }
 }
 
-.showcase-container .showcase-card h4 {
+.showcase-container .showcase-card .title {
   font-size: 1.25rem;
-  color: #4285F4;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
 
-.button {
-  border-radius: 50px;
-  width: 140px;
-  position: absolute;
-  bottom: 1.5rem;
-  background-color: #4285F4;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  padding: 1rem 1.15rem;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+@media (min-width: 0px) and (max-width: 480px) {
+  .showcase-container .showcase-card .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-.button:hover {
-  background-color: #1E50A5;
+@media (min-width: 481px) and (max-width: 767px) {
+  .showcase-container .showcase-card .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .showcase-container .showcase-card .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.showcase-container .showcase-card .card-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .showcase-container .showcase-card .card-flexbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .showcase-container .showcase-card .card-flexbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .showcase-container .showcase-card .card-flexbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+.showcase-container .showcase-card .card-flexbox .image-project {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 150px;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .showcase-container .showcase-card .card-flexbox .image-project {
+    margin-top: 2rem;
+    width: 120px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .showcase-container .showcase-card .card-flexbox .image-project {
+    margin-top: 2rem;
+    width: 120px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .showcase-container .showcase-card .card-flexbox .image-project {
+    margin-top: 2rem;
+    width: 120px;
+  }
 }
 /*# sourceMappingURL=home.css.map */
