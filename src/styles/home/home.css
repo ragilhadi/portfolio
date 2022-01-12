@@ -105,12 +105,20 @@
   border-color: #F85E56;
 }
 
+.border-yellow {
+  border-color: #FBBD2E;
+}
+
 .title-red {
   color: #F85E56;
 }
 
 .title-blue {
   color: #4285F4;
+}
+
+.title-yellow {
+  color: #FBBD2E;
 }
 
 .showcase-container {

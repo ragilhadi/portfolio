@@ -48,6 +48,14 @@
   background-color: #D8342B;
 }
 
+.button-yellow {
+  background-color: #FBBD2E;
+}
+
+.button-yellow:hover {
+  background-color: #DFA41D;
+}
+
 .content-container {
   padding: 5% 25%;
 }
@@ -110,6 +118,10 @@
 
 .blue-text {
   color: #4285F4;
+}
+
+.yellow-text {
+  color: #FBBD2E;
 }
 
 .content-header {
@@ -454,6 +466,10 @@
 
 .footer-red {
   background-color: #F85E56;
+}
+
+.footer-yellow {
+  background-color: #FBBD2E;
 }
 
 .footer-container {
