@@ -299,6 +299,16 @@
     }
 }
 
+.flexbox-column {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    img {
+        margin-top: 3rem;
+    }
+}
+
 .footer-blue {
     background-color: $primaryColor;
 }
@@ -375,3 +385,23 @@
     }
 }
 
+
+.navbar-home {
+    margin: 0 0 2rem;
+
+    a {
+        font-size: 1.25rem;
+        text-decoration: none;
+        color: $textBlack;
+        font-weight:$semi-bold;
+    }
+}
+
+.important-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.important-text-red {
+    color: #F85E56;
+}

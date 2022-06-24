@@ -13,24 +13,40 @@
     </head>
 <body>
     <div class="content-wide-container">
+        <div class="navbar-home">
+            <a href="../">
+                <- Back to Home
+            </a>
+        </div>
         <div class="content-header">
             <div class="content-description">
                 <p class="red-text">Microcontroler System</p>
                 <h1>MI Detection System  ━</h1>
                 <p class="red-text">Myocardial Infarction Detection System Using Arduino</p>
                 <p class="summary">
-                    "Arduino project to detect a person suffering from myocardial infraction by using pathological Q Waves and ST Segment Elevation as features"
+                    "Arduino project to detect a person suffering from <span class="important-text important-text-red">Myocardial Infraction</span> by using  <span class="important-text important-text-red">Pathological Q Waves</span> and  <span class="important-text important-text-red">ST Segment Elevation</span> as features"
                 </p>
                 <a href="#" class="button-red button">Github Repository</a>
             </div>
             <img src='../src/img/project2/heart.png' />
         </div>
 
+
+        <div class='content-flexbox'>
+            <div class="text">
+                <h2>What background is the underlying work on this project?</h2>
+                <p>
+                    According to the <span class="important-text important-text-red">World Health Organization (WHO)</span> deaths caused by Heart disease in the world reach <span class="important-text important-text-red">17.9 million annually</span>, or about 32% of deaths worldwide. while in Indonesia according to the <span class="important-text important-text-red">Ministry of Health in 2013</span> heart disease was the <span class="important-text important-text-red">First cause of death in Indonesia</span> with a rate of 37% compared to other diseases.
+                </p>
+            </div>
+            <img src='../src/img/project2/heart-ilust.png' />
+        </div>
+
         <div class='content-flexbox'>
             <img src='../src/img/project2/person.png' />
             <div class="text">
-                <h2>What is Myocardial Infraction</h2>
-                <p>Myocardial infraction occurs when one or more areas of the heart do not get enough oxygen supply due to blocked blood flow to the heart.
+                <h2>What is Myocardial Infarction ?</h2>
+                <p>Myocardial infraction occurs when one or more areas of the <span class="important-text important-text-red">Heart do not get enough oxygen supply due to blocked blood flow to the heart.</span>
                     Blocked blood flow to the heart is caused by plaque buildup in the arteries (atherosclerosis). 
                     When plaque ruptures or disintegrates it will form a blood clot, this blood clot is the cause of Myocardial Infraction.
                     </p>
@@ -39,31 +55,113 @@
 
         <div class='content-flexbox'>
             <div class="text">
-                <h2>Detect the Myocardial Infraction based on ECG Singnal</h2>
-                <p>People with myocardial infraction can be detected by performing electrocardiography tests and reading the results of the signal. Because in myocardial infarction sufferers have some differences with normal signal results.</p>
+                <h2>How to Diagnose if Someone Suffers Myocardial Infarction ?</h2>
+                <p>
+                    Myocardial infraction itself has some symptoms such as pain and tightness in the chest. Patients who have these symptoms usually do a test to determine whether they have Myocardial Infraction or not. There are 2 ways that can be done to detect someone suffering from Myocardial Infarction, namely by doing an <span class="important-text important-text-red">Electrocardiogram (ECG) test or by doing a blood test.</span>
+                </p>
             </div>
-            <div>
-                <img src='../src/img/project2/ecg.png' />
-            </div>
+            <img src='../src/img/project2/bloodtest.png' />
         </div>
 
         <div class='content-flexbox'>
-            <img src='../src/img/project2/features.png' />
+            <img src='../src/img/project2/ecg-person.png' />
             <div class="text">
-                <h2>Using Pathological Q Waves & ST Segment Elevation as Features</h2>
-                <p>Some of the differences that can be seen in ECG signals for myocardial infraction sufferers are Pathological Q Waves and ST Segment Elevation. This condition distinguishes from normal signals can be seen in the following image.</p>
+                <h2>What Method is Used to Detect Myocardial Infarction ?</h2>
+                <p>
+                    Blood tests are tested because some heart proteins will slowly leak into the blood due to Myocardial Infarction. Blood tests are done 2 times for 6-24 hours. Because it takes a long time blood test is not a good solution in detecting Myocardial Infraction so the <ECG class="important-text important-text-red">ECG test is selected.</span>
+                </p>
             </div>
         </div>
 
         <div class='content-flexbox'>
+            <div class="text">
+                <h2>How Electrocardiogram Test Works ?</h2>
+                <p>
+                    Electrocardiogram is a simple test that can be used to check your heart's rhythm and electrical activity. <span class="important-text important-text-red">Sensors attached to the skin are used to detect the electrical signals</span> produced by your heart each time it beats.
+                </p>
+            </div>
+            <img src='../src/img/project2/ecg-work.png' />
+        </div>
+
+        <div class='content-flexbox'>
+            <img src='../src/img/project2/ecg.png' />
+            <div class="text">
+                <h2>Detect the Myocardial Infarction based on ECG Signal</h2>
+                <p>People with Myocardial Infraction can be detected by performing electrocardiography tests and reading the results of the signal. Because in <span class="important-text important-text-red">Myocardial Infarction sufferers have some differences with normal signal results.</span></p>
+            </div>
+        </div>
+
+
+        <div class='content-flexbox'>
+            <div class="text">
+                <h2>What is Pathological Q Waves ?</h2>
+                <p>
+                    Pathological Q Waves is one of the clues that can be seen in the ECG signal that indicates that a person is suffering from or has suffered from Myocardial Infarction. <span class="important-text important-text-red">Pathological Q Waves indicate the absence of electrical activity on the heart. </span>
+                    <br/>
+                    <br/>
+                    <span class="important-text important-text-red">Q Waves called Pathological Q Waves : </span><br/>
+                    <span class="important-text">A.</span> Has a depth of more than 25% compared to QRS Complex <br/>
+                    <span class="important-text">B.</span> Has a width of more than 40 ms or about 1 mm <br/>
+                    <span class="important-text">C.</span> Has a depth of more than 2mm <br/>
+                    <span class="important-text">D.</span> Pathological Q Waves can be seen in Lead V1-V3 <br/>
+
+                </p>
+            </div>
+            <img src='../src/img/project2/pathological.png' />
+        </div>
+
+        <div class='content-flexbox'>
+            <img src='../src/img/project2/stsegment.png' />
+            <div class="text">
+                <h2>What is ST Segment Elevation ?</h2>
+                <p>
+                    The ST Segment represents the interval between depolarization and ventricular repolarization. <span class="important-text important-text-red">One of the abnormalities that can occur in the ST Segment is an increase (Elevation) which is one of the signs of Myocardial Infarction </span>. ST Segment elevation occurs at the J point which has a value of ≥ 0.2 mV for men and ≥ 0.15 mV for women which can be seen in the lead V2-V3.
+                </p>
+            </div>
+        </div>
+
+        <div class='content-flexbox'>
+            <div class="text">
+                <h2>Why use Pathological Q Waves and ST Segment Elevation as features?</h2>
+                <p>
+                    ST Segment elevation is used as a feature because in previous studies it used ST Segment Elevation as a feature and got an accuracy of 91.89% (Anirudha V Bhardwaj, et al. 2018). Pathological Q Waves are used because they are a feature that is often encountered by people with myocardial infraction. In other studies discussing <span class="important-text important-text-red">these two features are indeed present in patients with Myocardial Infarction</span> (MS Guillem, et al. 2004)
+                </p>
+            </div>
+            <img src='../src/img/project2/features.png' />
+        </div>
+
+        <div class='content-flexbox'>
+            <div>
+                <img src='../src/img/project2/svm.png' />
+            </div>
             <div class="text">
                 <h2>Classify Using Support Vector Machine</h2>
-                <p>Both conditions are then used as a feature to be used to classify myocardial infraction sufferers and normal using support vector machine. The result of the accuracy of the classification is 82.3%.</p>
-            </div>
-            <div>
-                <img src='../src/img/project2/accuracy.png' />
+                <p>Support Vector Machine (SVM) is a linear model for classification and regression problems. It can solve linear and non-linear problems and work well for many practical problems. Both conditions are then used as a feature to be used to classify myocardial infraction sufferers and normal using support vector machine</p>
             </div>
         </div>
+
+        <div class='content-flexbox'>
+            <div class="text">
+                <h2>How to get electrical activity on the heart ?</h2>
+                <p>
+                    Sensor Module AD8232 is a tool for measuring electrical activity in the heart with a Single Lead . When conducting electrical activity readings on the heart using electrodes. electrodes must be placed on a certain part of the surface of the skin. Electrode placement using Einthoven's Triangle theory. Einthoven's Triangle is an imaginary triangular formation used in the placement of electrodes when reading electrical activity in the heart.
+                </p>
+            </div>
+            <div>
+                <img src='../src/img/project2/electrode.jpg' />
+            </div>
+        </div>
+
+        <div class='flexbox-column content-flexbox'>
+            <div class="text">
+                <h2>Block Diagram System</h2>
+                <p>A block diagram is a diagram of a system in which the principal parts or functions are represented by blocks connected by lines that show the relationships of the blocks. The system works by using the <span class="important-text important-text-red">AD8232 sensor to get the ECG signal then processing it on the arduino and displaying the result on LCD16x2</span></p>
+            </div>
+            <div>
+                <img src='../src/img/project2/diagram-blocks.png' />
+            </div>
+        </div>
+
 
         <div class='content-flexbox'>
             <img src='../src/img/project2/system.png' />
