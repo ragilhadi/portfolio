@@ -13,37 +13,59 @@
     </head>
 <body>
     <div class="content-wide-container">
-        <nav class="navbar">
-
-        </nav>
+        <div class="navbar-home">
+            <a href="../">
+                <- Back to Home
+            </a>
+        </div>
 
         <div class="content-header">
             <div class="content-description">
                 <p class="blue-text">Desktop Application</p>
                 <h1>Smart Canteen ━</h1>
-                <p class="blue-text">Face Direction Detection Using Faciallandmark & OpticalFlow</p>
+                <p class="blue-text">Head Direction Detection Using Faciallandmark & OpticalFlow</p>
                 <p class="summary">
                     "Smart canteen destktop application that uses head movements to navigate options"
                 </p>
-                <a href="#" class="button-blue button">Donwload Application</a>
+                <a href="https://github.com/ragilhadi/smart-canteen" target="_blank" class="button-blue button">Github Repository</a>
             </div>
             <img src='../src/img/project1/smart-canteen.png' />
         </div>
         <div class='content-flexbox'>
             <div class="text">
-                <h2>Detect the Direction of the Face</h2>
-                <p>Detecting the direction of facial movements using faciallandmark and optical flow</p>
+                <h2>What is Facial Landmarks ?</h2>
+                <p>Facial landmark detection is a computer vision task in which a model needs to predict key points representing regions or landmarks on a human’s face – eyes, nose, lips, and others. Facial landmark detection is a base task which can be used to perform other computer vision tasks, including head pose estimation, identifying gaze direction, detecting facial gestures, and swapping faces.</p>
             </div>
-            <img src='../src/img/project1/app.png' />
+            <img src='../src/img/project1/fl.png' />
         </div>
 
         <div class='content-flexbox'>
             <div>
-                <img src='../src/img/project1/fl.png' />
+                <img src='../src/img/project1/opticalflow.jpg' />
             </div>
             <div class="text">
-                <h2>Using Facialandmark to Detect Face & Opticalflow to Track the Points</h2>
-                <p>by using the point in the faciallandmark, the point will be tracked using opticalflow and determine the direction of the face.</p>
+                <h2>What is Optical Flow ?</h2>
+                <p>Optical flow is a technique used to describe image motion. It is usually applied to a series of images that have a small time step between them, for example, video frames. Optical flow calculates a velocity for points within the images, and provides an estimation of where points could be in the next image sequence.</p>
+            </div>
+        </div>
+
+        <div class='content-flexbox'>
+            <div class="text">
+                <h2>Detect Head Movement</h2>
+                <p>by using the point in the faciallandmark, the point will be tracked using opticalflow and determine the direction of the head. detected head movements are towards the top, bottom, right and left</p>
+            </div>
+            <div>
+                <img src='../src/img/project1/head_move.png' />
+            </div>
+        </div>
+
+        <div class='content-flexbox'>
+            <div>
+                <img src='../src/img/project1/app.JPG' />
+            </div>
+            <div class="text">
+                <h2>Create Desktop Application Using Qt</h2>
+                <p>The implementation of the head movement context is made into an application using PyQt5 with the aim of selecting menus on the canteen</p>
             </div>
         </div>
 

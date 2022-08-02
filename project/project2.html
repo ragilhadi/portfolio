@@ -26,7 +26,7 @@
                 <p class="summary">
                     "Arduino project to detect a person suffering from <span class="important-text important-text-red">Myocardial Infraction</span> by using  <span class="important-text important-text-red">Pathological Q Waves</span> and  <span class="important-text important-text-red">ST Segment Elevation</span> as features"
                 </p>
-                <a href="#" class="button-red button">Github Repository</a>
+                <a href="https://github.com/ragilhadi/myocardial-infraction-detection" target="_blank"  class="button-red button">Github Repository</a>
             </div>
             <img src='../src/img/project2/heart.png' />
         </div>
@@ -130,28 +130,6 @@
             <img src='../src/img/project2/features.png' />
         </div>
 
-        <div class='content-flexbox'>
-            <div>
-                <img src='../src/img/project2/svm.png' />
-            </div>
-            <div class="text">
-                <h2>Classify Using Support Vector Machine</h2>
-                <p>Support Vector Machine (SVM) is a linear model for classification and regression problems. It can solve linear and non-linear problems and work well for many practical problems. Both conditions are then used as a feature to be used to classify myocardial infraction sufferers and normal using support vector machine</p>
-            </div>
-        </div>
-
-        <div class='content-flexbox'>
-            <div class="text">
-                <h2>How to get electrical activity on the heart ?</h2>
-                <p>
-                    Sensor Module AD8232 is a tool for measuring electrical activity in the heart with a Single Lead . When conducting electrical activity readings on the heart using electrodes. electrodes must be placed on a certain part of the surface of the skin. Electrode placement using Einthoven's Triangle theory. Einthoven's Triangle is an imaginary triangular formation used in the placement of electrodes when reading electrical activity in the heart.
-                </p>
-            </div>
-            <div>
-                <img src='../src/img/project2/electrode.jpg' />
-            </div>
-        </div>
-
         <div class='flexbox-column content-flexbox'>
             <div class="text">
                 <h2>Block Diagram System</h2>
@@ -161,23 +139,74 @@
                 <img src='../src/img/project2/diagram-blocks.png' />
             </div>
         </div>
+        
+        <div class='content-flexbox'>
+            <div class="text">
+                <h2>How to get electrical activity on the heart ?</h2>
+                <p>
+                    Sensor Module AD8232 is a tool for measuring electrical activity in the heart with a Single Lead . When conducting electrical activity readings on the heart using electrodes. electrodes must be placed on a certain part of the surface of the skin. <span class="important-text important-text-red">Electrode placement using Einthoven's Triangle theory.</span> Einthoven's Triangle is an imaginary triangular formation used in the placement of electrodes when reading electrical activity in the heart.
+                </p>
+            </div>
+            <div>
+                <img src='../src/img/project2/electrode.jpg' />
+            </div>
+        </div>
+
+        <div class='content-flexbox'>
+            <div>
+                <img src='../src/img/project2/eksponential filter.png' />
+            </div>
+            <div class="text">
+                <h2>Exponential Filter</h2>
+                <p>The signal obtained is then carried out a filter process using an exponential filter. <span class="important-text important-text-red">Exponential filters are used because they can reduce noise in data</span> that has a consistent time interval such as ECG signal data. Exponential filter has the following formula</p>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="194.41254901885986" height="46.78750228881836" style="width:194.41254901885986px;height:46.78750228881836px;font-family:Asana-Math, Asana;background:#FFF;"><g><g></g><g><g><g transform="matrix(1,0,0,1,2,39.399993896484375)"><path transform="matrix(0.017,0,0,-0.017,0,0)" d="M-7 -180C-8 -187 -8 -193 -8 -198C-8 -241 29 -276 74 -276C180 -276 290 -152 349 33L490 473L479 482C450 471 427 465 405 463L370 331C358 284 323 211 290 162C255 111 206 67 184 67C172 67 163 90 164 115L180 322C182 353 184 391 184 419C184 464 177 482 160 482C147 482 133 475 85 442L3 386L14 368L64 398C69 401 80 410 89 410C103 410 111 391 111 358C111 357 111 351 110 343L93 100L92 60C92 18 110 -11 135 -11C172 -11 256 74 331 187L282 16C231 -161 181 -234 111 -234C76 -234 49 -207 49 -172C49 -167 50 -159 51 -150L41 -146Z" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="8" fill="rgb(0,0,0)" fill-opacity="1"></path></g></g><g><g><g><g><g transform="matrix(1,0,0,1,10.987548828125,42.412481689453124)"><path transform="matrix(0.0119,0,0,-0.0119,0,0)" d="M24 388L31 368L63 389C100 412 103 414 110 414C121 414 128 404 128 389C128 338 87 145 46 2L53 -9C78 -2 101 4 123 8C142 134 163 199 209 268C263 352 338 414 383 414C394 414 400 405 400 390C400 372 397 351 389 319L337 107C328 70 324 47 324 31C324 6 335 -9 354 -9C380 -9 416 12 514 85L504 103L478 86C449 67 427 56 417 56C410 56 404 65 404 76C404 81 405 92 406 96L472 372C479 401 483 429 483 446C483 469 472 482 452 482C410 482 341 444 282 389C244 354 216 320 164 247L202 408C206 426 208 438 208 449C208 470 200 482 185 482C164 482 125 460 52 408Z" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="8" fill="rgb(0,0,0)" fill-opacity="1"></path></g></g></g></g></g><g><g transform="matrix(1,0,0,1,23.7125244140625,39.399993896484375)"><path transform="matrix(0.017,0,0,-0.017,0,0)" d="M604 347L604 406L65 406L65 347ZM604 134L604 193L65 193L65 134Z" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="8" fill="rgb(0,0,0)" fill-opacity="1"></path></g></g><g><g transform="matrix(1,0,0,1,40.175048828125,39.399993896484375)"><path transform="matrix(0.017,0,0,-0.017,0,0)" d="M167 420C188 420 201 421 226 424C171 350 72 266 72 126C72 44 107 -11 160 -11C224 -11 276 44 350 187C341 143 338 118 338 95C338 32 367 -11 412 -11C546 -11 699 238 699 384C699 441 673 482 637 482C624 482 612 478 604 470L554 423L565 404C574 410 583 413 592 413C619 413 635 390 635 350C635 205 538 39 453 39C424 39 403 79 403 134C403 181 412 247 424 290L476 474L469 482L395 460L366 311C354 249 340 209 311 155C271 80 233 39 203 39C168 39 145 78 145 136C145 255 186 352 285 464L275 482C255 473 242 470 214 470C186 470 144 472 115 475L103 476C97 477 92 477 91 477C79 477 70 475 59 470C45 443 34 407 21 352L43 352L60 394C67 411 87 422 111 422C145 422 128 420 167 420ZM1138 267L1007 213L1002 204L1038 153L1048 153L1154 241L1172 99L1182 95L1250 121L1250 131L1182 253L1320 233L1329 241L1329 303L1323 307L1184 283L1253 408L1250 423L1188 442L1179 438L1153 295L1058 393L1048 393L1004 341L1007 331ZM1616 1C1631 -7 1647 -11 1659 -11C1692 -11 1731 18 1762 65L1838 182L1849 113C1862 28 1885 -11 1921 -11C1943 -11 1975 6 2007 35L2056 79L2047 98C2011 68 1986 53 1970 53C1955 53 1942 63 1932 83C1923 102 1912 139 1907 168L1889 269L1924 318C1971 383 1998 406 2029 406C2045 406 2057 398 2062 383L2076 387L2091 472C2079 479 2070 482 2061 482C2021 482 1981 446 1919 354L1882 299L1876 347C1864 446 1837 482 1778 482C1752 482 1730 474 1721 461L1663 378L1680 368C1710 402 1730 416 1749 416C1782 416 1804 375 1821 277L1832 215L1792 153C1749 86 1715 54 1687 54C1672 54 1661 58 1659 63L1648 91L1628 88C1628 53 1620 27 1616 1Z" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="8" fill="rgb(0,0,0)" fill-opacity="1"></path></g></g><g><g transform="matrix(1,0,0,1,79.38751220703125,39.399993896484375)"><path transform="matrix(0.017,0,0,-0.017,0,0)" d="M604 241L604 300L364 300L364 538L305 538L305 300L65 300L65 241L305 241L305 0L364 0L364 241Z" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="8" fill="rgb(0,0,0)" fill-opacity="1"></path></g></g><g><g transform="matrix(1,0,0,1,94.1500244140625,39.399993896484375)"><path transform="matrix(0.017,0,0,-0.017,0,0)" d="M146 266C146 526 243 632 301 700L282 726C225 675 60 542 60 266C60 159 85 58 133 -32C168 -99 200 -138 282 -215L301 -194C255 -137 146 -15 146 266Z" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="8" fill="rgb(0,0,0)" fill-opacity="1"></path></g></g><g><g transform="matrix(1,0,0,1,99.800048828125,39.399993896484375)"><path transform="matrix(0.017,0,0,-0.017,0,0)" d="M418 -3L418 27L366 30C311 33 301 44 301 96L301 700L60 598L67 548L217 614L217 96C217 44 206 33 152 30L96 27L96 -3C250 0 250 0 261 0C292 0 402 -3 418 -3Z" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="8" fill="rgb(0,0,0)" fill-opacity="1"></path></g></g><g><g transform="matrix(1,0,0,1,111.6875,39.399993896484375)"><path transform="matrix(0.017,0,0,-0.017,0,0)" d="M555 243L555 299L51 299L51 243Z" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="8" fill="rgb(0,0,0)" fill-opacity="1"></path></g></g><g><g transform="matrix(1,0,0,1,125.375,39.399993896484375)"><path transform="matrix(0.017,0,0,-0.017,0,0)" d="M167 420C188 420 201 421 226 424C171 350 72 266 72 126C72 44 107 -11 160 -11C224 -11 276 44 350 187C341 143 338 118 338 95C338 32 367 -11 412 -11C546 -11 699 238 699 384C699 441 673 482 637 482C624 482 612 478 604 470L554 423L565 404C574 410 583 413 592 413C619 413 635 390 635 350C635 205 538 39 453 39C424 39 403 79 403 134C403 181 412 247 424 290L476 474L469 482L395 460L366 311C354 249 340 209 311 155C271 80 233 39 203 39C168 39 145 78 145 136C145 255 186 352 285 464L275 482C255 473 242 470 214 470C186 470 144 472 115 475L103 476C97 477 92 477 91 477C79 477 70 475 59 470C45 443 34 407 21 352L43 352L60 394C67 411 87 422 111 422C145 422 128 420 167 420Z" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="8" fill="rgb(0,0,0)" fill-opacity="1"></path></g></g><g><g transform="matrix(1,0,0,1,137.63751220703125,39.399993896484375)"><path transform="matrix(0.017,0,0,-0.017,0,0)" d="M51 726L32 700C87 636 187 526 187 266C187 -10 83 -131 32 -194L51 -215C104 -165 273 -23 273 265C273 542 108 675 51 726Z" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="8" fill="rgb(0,0,0)" fill-opacity="1"></path></g></g><g><g transform="matrix(1,0,0,1,143.28753662109375,39.399993896484375)"><path transform="matrix(0.017,0,0,-0.017,0,0)" d="M417 267L286 213L281 204L317 153L327 153L433 241L451 99L461 95L529 121L529 131L461 253L599 233L608 241L608 303L602 307L463 283L532 408L529 423L467 442L458 438L432 295L337 393L327 393L283 341L286 331ZM879 -180C878 -187 878 -193 878 -198C878 -241 915 -276 960 -276C1066 -276 1176 -152 1235 33L1376 473L1365 482C1336 471 1313 465 1291 463L1256 331C1244 284 1209 211 1176 162C1141 111 1092 67 1070 67C1058 67 1049 90 1050 115L1066 322C1068 353 1070 391 1070 419C1070 464 1063 482 1046 482C1033 482 1019 475 971 442L889 386L900 368L950 398C955 401 966 410 975 410C989 410 997 391 997 358C997 357 997 351 996 343L979 100L978 60C978 18 996 -11 1021 -11C1058 -11 1142 74 1217 187L1168 16C1117 -161 1067 -234 997 -234C962 -234 935 -207 935 -172C935 -167 936 -159 937 -150L927 -146Z" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="8" fill="rgb(0,0,0)" fill-opacity="1"></path></g></g><g><g transform="matrix(1,0,0,1,170.237548828125,39.399993896484375)"><path transform="matrix(0.017,0,0,-0.017,0,0)" d="M555 243L555 299L51 299L51 243Z" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="8" fill="rgb(0,0,0)" fill-opacity="1"></path></g></g><g><g transform="matrix(1,0,0,1,183.925048828125,39.399993896484375)"><path transform="matrix(0.017,0,0,-0.017,0,0)" d="M418 -3L418 27L366 30C311 33 301 44 301 96L301 700L60 598L67 548L217 614L217 96C217 44 206 33 152 30L96 27L96 -3C250 0 250 0 261 0C292 0 402 -3 418 -3Z" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="8" fill="rgb(0,0,0)" fill-opacity="1"></path></g></g></g></g></svg>
+            </div>
+        </div>
+
+        <div class='content-flexbox'>
+            <div class="text">
+                <h2>Normalization Using Z-Score</h2>
+                <p>The features that have been presented are then carried out a normalization process using Z-Score. <span class="important-text important-text-red">Normalization of feature values needs to be done because</span> the ECG signal amplitude value obtained from the AD8232 sensor module with the ECG signal amplitude value in the <span class="important-text important-text-red">dataset used is different.</span></p>
+            </div>
+            <div>
+                <img src='../src/img/project2/z-score.JPG' />
+            </div>
+        </div>
+
+        <div class='content-flexbox'>
+            <div>
+                <img src='../src/img/project2/svm.png' />
+            </div>
+            <div class="text">
+                <h2>Classify Using Support Vector Machine</h2>
+                <p>Support vector machine (SVM) is a method used to classify Myocardial Infarction. <span class="important-text important-text-red">SVM works by finding the best Hyperplane that separates with maximum distance between classes.</span> In this project, SVM uses a linear kernel</p>
+            </div>
+        </div>
 
 
         <div class='content-flexbox'>
             <img src='../src/img/project2/system.png' />
             <div class="text">
                 <h2>Arduino System Report</h2>
-                <p>Then the results of the classification are connected with the hardware. It uses arduino uno as a process and AD8232 sensor as ECG single-lead sensor. and the output uses a 16x2 LCD</p>
+                <p>Hardware schemantic design by connecting all three components to each other</p>
             </div>
         </div>
 
-        <!-- <div class='content-center'>
+        <div class='content-flexbox'>
+            <div class="text">
+                <h2>Evaluation Metrics</h2>
+                <p>the results obtained by Support Vector Machine in detect out Myocardial Infarction are accuracy of 83.3%, precision of 88%, recall of 83% and F1-score of 83%.</p>
+            </div>
+            <img src='../src/img/project2/cf.JPG' class='small-image' />
+        </div>
+
+        <div class='content-center'>
             <h2>Tools & Libraries Using</h2>
             <div class='image-container'>
-                <img src='../src/img/project2/arduino.png'/ class='icon'>
-                <img src='../src/img/project1/opencv.png'  class='icon'/>
+                <img src='../src/img/project4/arduino.png'/ class='icon'>
+                <img src='../src/img/project4/sklearn.png'/ class='icon'>
             </div>
-        </div> -->
+        </div>
 
     </div>
 

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../src/img/logo.ico">
+        <link rel="stylesheet" href="../src/styles/reset.css">
+        <link rel="stylesheet" href="../src/styles/global.css">
+        <link rel="stylesheet" href="../src/styles/project1/project1.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <title>Project | Stress Level Classification</title>
+    </head>
+<body>
+    <div class="content-wide-container">
+        <div class="navbar-home">
+            <a href="../">
+                <- Back to Home
+            </a>
+        </div>
+        <div class="content-header">
+            <div class="content-description">
+                <p class="green-text">Microcontroler System</p>
+                <h1>Stress Level Classification ━</h1>
+                <p class="green-text">Stress Level Classification System Using Arduino</p>
+                <p class="summary">
+                    Stress Level Classification System Using Heart Rate and RR Interval as Features and Decision Tree Algorithms
+                </p>
+                <a href="https://github.com/ragilhadi/sress-level-classification" target="_blank" class="button-green button">Github Repository</a>
+            </div>
+            <img src='../src/img/project4/stress-level.png' />
+        </div>
+
+        <div class='content-flexbox'>
+            <div class="text">
+                <h2>Stress in Human</h2>
+                <p>Stress is a condition of physical and psychological tension caused by the perception of fear and anxiety. Stress is the reaction of the organism to unpleasant stimuli (stimulation), stress should be understood as an interactive relation that occurs between physical, physiological, psychological and behavioral systems
+                </p>
+            </div>
+            <img src='../src/img/project4/person-stress.png' />
+        </div>
+
+        <div class='content-flexbox'>
+            <img src='../src/img/project4/hr.jpg' class='small-image'/>
+            <div class="text">
+                <h2>What is Heart Rate ?</h2>
+                <p>In medicine, the number of times the heart beats within a certain time period, usually a minute. The heart rate can be felt at the wrist, side of the neck, back of the knees, top of the foot, groin, and other places in the body where an artery is close to the skin. The resting heart rate is normally between 60 and 100 beats a minute in a healthy adult who is at rest. </p>
+            </div>
+        </div>
+
+        <div class='content-flexbox'>
+            <div class="text">
+                <h2>What is RR Interval ?</h2>
+                <p>RR Interval is simply a measure of the variation in time between each heartbeat. This variation is controlled by a primitive part of the nervous system called the autonomic nervous system (ANS). It works behind the scenes, automatically regulating our heart rate, blood pressure, breathing, and digestion among other key tasks.</p>
+            </div>
+            <img src='../src/img/project4/rr_interval.png'  class='small-image' />
+        </div>
+
+        <div class='content-flexbox'>
+            <img src='../src/img/project4/DT.png'  class='small-image'/>
+            <div class="text">
+                <h2>Decision Tree</h2>
+                <p>Heart Rate and RR Interval are used as features for stress level classification using the Decision Tree method. Here are the decision tree equations obtained</p>
+            </div>
+        </div>
+
+
+        <div class='content-flexbox'>
+            <div class="text">
+                <h2>Block Diagram System</h2>
+                <p>The block diagram starts with a pulse oximeter sensor that gets the heart rate value on the subject and is used as an input. The heart rate obtained is then processed and classified on arduino uno. classification results are displayed on the LCD 16x2</p>
+            </div>
+            <div>
+                <img src='../src/img/project4/BD.png' />
+            </div>
+        </div>
+
+        <div class='content-flexbox'>
+            <img src='../src/img/project4/cf.JPG' class='small-image' />
+            <div class="text">
+                <h2>Evaluation Metrics</h2>
+                <p>the results obtained by decison tree in carrying out stress level classification are accuracy of 73.3%, precision of 71%, recall of 70% and F1-score of 70%.</p>
+            </div>
+        </div>
+
+
+        <div class='content-center'>
+            <h2>Tools & Libraries Using</h2>
+            <div class='image-container'>
+                <img src='../src/img/project4/arduino.png'/ class='icon'>
+                <img src='../src/img/project4/sklearn.png'/ class='icon'>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class='footer-green footer-container'>
+        <div class='footer-left'>
+            <h3>Get In Touch</h3>
+            <p>ragilprasetyo310@gmail.com</p>
+        </div>
+        <div class='footer-right'>
+            <p>Thank You For Visiting My Website</p>
+            <img src='../src/img/footer-icon.png' />
+        </div>
+    </footer>
+</body>
+</html>

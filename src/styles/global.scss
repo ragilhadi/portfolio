@@ -45,6 +45,13 @@
     }   
 }
 
+.button-green {
+    background-color: #2AC940;
+    &:hover {
+        background-color: #1B972C;
+    }   
+}
+
 .content-container {
     padding: 5% 25%;
 
@@ -94,6 +101,10 @@
 
 .yellow-text {
     color: #FBBD2E;
+}
+
+.green-text {
+    color: #2AC940;
 }
 
 .content-header {
@@ -321,6 +332,10 @@
     background-color: #FBBD2E; 
 }
 
+.footer-green {
+    background-color: #2AC940; 
+}
+
 .footer-container {
     padding: 5% 10%;
     color: white;
@@ -404,4 +419,12 @@
 
 .important-text-red {
     color: #F85E56;
+}
+
+.important-text-yellow {
+    color: #FBBD2E; 
+}
+
+.small-image {
+    width: 420px;
 }

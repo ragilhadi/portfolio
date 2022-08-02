@@ -32,28 +32,70 @@
         </div>
         <div class='content-flexbox'>
             <div class="text">
-                <h2>Object Detection Using yoloV5</h2>
-                <p>yolov5 is used to detect objects with the class name "papan" that contains a room name. yolov5 can already detect "papan" objects very well</p>
+                <h2>Project Overview</h2>
+                <p>These project is to <span class="important-text important-text-yellow">detect the plate with label name of "papan"</span> using YoloV5, these project only detect 1 class called "papan" . after that take the bounding box and <span class="important-text important-text-yellow">get the text inside the bounding box.</span> to get the text inside bounding box these project use 2 method first using my own trained CNN model and used the python package name easyocr .</p>
             </div>
-            <img src='../src/img/project3/yolo.png' />
         </div>
 
         <div class='content-flexbox'>
-            <div>
-                <img src='../src/img/project3/cnn.png' />
+            <div class="text">
+                <h2>Object Detection Data Preparation</h2>
+                <p>resize for all images and proceed with annotating objects on all images on the dataset using makesense.ai and getting the result of annotating objects with the necessary .txt format when practicing using Yolov5</p>
             </div>
+            <img src='../src/img/project3/makesense.png' />
+        </div>
+
+        <div class='content-flexbox'>
+            <img src='../src/img/project3/yolov5.jpg' class='small-image'/>
+            <div class="text">
+                <h2>What is YoloV5 ?</h2>
+                <p>YOLOv5 🚀 is a family of compound-scaled object detection models trained on the COCO dataset, and includes simple functionality for Test Time Augmentation (TTA), model ensembling, hyperparameter evolution, and export to ONNX, CoreML and TFLite</p>
+            </div>
+        </div>
+
+        <div class='content-flexbox'>
+            <div class="text">
+                <h2>Object Detection Using yoloV5</h2>
+                <p>Yolov5 is used to detect objects with the class name "papan" that contains a room name. yolov5 can already detect "papan" objects very well</p>
+            </div>
+            <img src='../src/img/project3/result.png' />
+        </div>
+
+        <div class='content-flexbox'>
+            <img src='../src/img/project3/segmentation.png' />
+            <div class="text">
+                <h2>Image Charachter Segmentation</h2>
+                <p>objects that have been detected by YoloV5 are then preprocessed to get the characters on the object using the opencv library.</p>
+            </div>
+        </div>
+
+
+        <div class='content-flexbox'>
             <div class="text">
                 <h2>Text Charachter Classification using Convolutional Neural Network</h2>
                 <p>Convolutional Neural Network (CNN) is used for the classification of charachters found in extracted images. CNN conducted 10 class targets to ease the classification process.</p>
             </div>
+            <div>
+                <img src='../src/img/project3/cnn.png' />
+            </div>
+        </div>
+
+        <div class='content-flexbox'>
+            <img src='../src/img/project3/combine.png' />
+            <div class="text">
+                <h2>Combine Yolov5 and CNN to detect and read text</h2>
+                <p>CNN and Yolov5 combined to be able to detect objects and try to read the charachter contained in the object and display the results in images and sounds.</p>
+            </div>
         </div>
 
         <div class='content-flexbox'>
             <div class="text">
-                <h2>Combine yolov5 and CNN to detect and read text</h2>
-                <p>CNN and yolov5 combined to be able to detect objects and try to read the charachter contained in the object and display the results in images and sounds.</p>
+                <h2>Block Diagram System</h2>
+                <p>The system uses the camera as input to get the image then the image is processed using the Raspberry Pi and the result will be displayed on the Monitor and through the sound output</p>
             </div>
-            <img src='../src/img/project3/result.png' />
+            <div>
+                <img src='../src/img/project3/diagram_block.png' />
+            </div>
         </div>
 
         <div class='content-center'>
